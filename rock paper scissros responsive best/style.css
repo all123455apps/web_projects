@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.heading{
+    background-color: rgb(78, 78, 237);
+    color: #fff;
+    text-align: center;
+}
+.buttons{
+    width: 100vw;
+    height: 9vh;
+    margin: 3vh 3vw;
+    display: flex;
+    gap: 5vw;
+}
+
+.buttons button{
+
+    color: #fff;
+    width: 13vw;
+    height: 8vh;
+    border-radius: 7px;
+    padding: 0.6vh 2vw;
+    
+    background: linear-gradient(40deg , rgb(116, 48, 48), rgb(179, 63, 151) ,rgb(23, 132, 132));
+     transition: all 0.3s ease; 
+    
+}
+
+
+
+.main{
+
+    width: 80vw;
+    height: 30vh;
+    margin: auto;
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+}
+
+.box:hover{
+    outline: 5px solid black;
+    border-radius: 50%;
+    
+
+    /* border: 2px solid black; */
+}
+
+.rock-img{
+    background: url("image/rock.png");
+}
+#rock{
+    margin: 10px 0;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+}
+
+.paper-img{
+    background: url("image/paper.png");
+}
+#paper{
+    margin: 10px 0;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+}
+
+.scissors-img{
+    background: url("image/scissors.png");
+}
+#scissors{
+    margin: 10px 0;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+}
+
+
+.imgs{
+    background-repeat: no-repeat;
+    width: 200px;
+    height:200px;
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center center;
+
+}
+
+
+
+.score{
+    
+    display: flex;
+    width: 40vw;
+    margin: auto;
+    margin-top: 15px;
+    height: 26vh;
+    justify-content: space-between;
+    text-align: center;
+}
+.scores :nth-child(1){
+    font-size:120px;
+
+}
+.msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 0;
+}
+.message{
+    
+    border-radius: 15px;
+    text-align: center;
+    
+
+  
+    padding: 14px 16px;
+    height: 10vh;
+    background-color: rgb(27, 27, 93);
+    color: #fefefe;
+    font-size: 45px;
+}
+
+
+
+/* responsive  */
+
+@media screen and (max-width: 700px) {
+
+   .buttons button{
+
+    width: 40vw;
+   }
+
+    .imgs{
+        width: 90px;
+        height: 90px;
+    }
+    .box{
+        width: 90px;
+        height: 90px;
+        
+    }
+    .box:hover{
+        outline: 5px solid black;
+        border-radius: 50%;
+        
+    
+        /* border: 2px solid black; */
+    }
+
+    .score{
+
+        width: 90vw;
+        
+    }
+    .message{
+        font-size: 20px;
+        height: 23px;
+    }
+    
+}
+
+
+/* js manipulation classes */
+.dark{
+
+    background-color: rgb(10 9 9);
+
+    color: #a4f434;
+
+}
+.buttons .design-btn{
+    background: linear-gradient(34deg , rgb(17, 194, 147) , rgb(204, 49, 98) , rgb(28, 169, 10), rgb(154, 15, 15));
+   
+    transform: scale(1.1); /* Add some scale effect */
+    font-weight: 799;
+    color: #0e0707;
+    
+    transition: all 0.5s ease; /* Smooth transition */
+
+    /* background: linear-gradient(40deg , rgb(83, 32, 47), rgb(14, 153, 157) ,rgb(10, 60, 50)); */
+}
